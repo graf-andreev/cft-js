@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Frontend CFT</title>
+</head>
+
+<body class="filter-active" style="overflow: hidden;">
+    <header class="header-container">
+        <a class="header-container__logo" href="">
+            <img src="img/main-logo.png" alt="">
+        </a>
+        <div class="header-container__catalog">
+            <div class="header-container__burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p class="header-container__catalog-name">Каталог</p>
+        </div>
+        <div class="header-input-wrapper">
+            <input class="header-input-wrapper__input" type="text" placeholder="Хочу найти">
+            <button class="header-input-wrapper__button">Найти</button>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav_container">
+                <li>
+                    <svg>
+                        <use xlink:href="img/main-sprite.svg#bonuses"></use>
+                    </svg>
+                    <p>Бонусы</p>
+                </li>
+                <li>
+                    <svg>
+                        <use xlink:href="img/main-sprite.svg#orders"></use>
+                    </svg>
+                    <p>Заказы</p>
+                </li>
+                <li>
+                    <svg>
+                        <use xlink:href="img/main-sprite.svg#actions"></use>
+                    </svg>
+                    <p>Акции</p>
+                </li>
+                <li>
+                    <svg>
+                        <use xlink:href="img/main-sprite.svg#cart"></use>
+                    </svg>
+                    <p>Корзина (<span>5</span>)</p>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="top-block">
+            <div class="top-block__breadcrumbs">
+                <p class="top-block__breadcrumbs-item">Каталог товаров /</p>
+                <p class="top-block__breadcrumbs-item"> Собачки</p>
+            </div>
+            <h1 class="top-block__header">Собачки</h1>
+        </div>
+        <div class="main-content">
+            <div class="filter-mob">
+                <svg>
+                    <use xlink:href="img/main-sprite.svg#filter-mob"></use>
+                </svg>
+                <p class="filter-mob__text">Фильтр</p>                  
+            </div>
+            <aside class="filter active">
+                <p class="filter__header">Фильтр</p>
+                <div class="filter-item">
+                    <div class="filter-item__header-wrapper">
+                        <p class="filter-item__inner-header">Тип</p>
+                        <svg>
+                            <use xlink:href="img/main-sprite.svg#top-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="filter-item__content-wrapper">
+                        <div class="filter-item__checkbox-wrapper">
+                            <input class="filter-item__input" type="checkbox" id="1" checked>
+                            <label class="filter-item__label" for="1">
+                                <div class="filter-item__checkbox"></div>
+                                <p class="filter-item__checkbox-text">Охотничьи</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-item__content-wrapper">
+                        <div class="filter-item__checkbox-wrapper">
+                            <input class="filter-item__input" type="checkbox" id="2">
+                            <label class="filter-item__label" for="2">
+                                <div class="filter-item__checkbox"></div>
+                                <p class="filter-item__checkbox-text">Компаньоны</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-item__content-wrapper">
+                        <div class="filter-item__checkbox-wrapper">
+                            <input class="filter-item__input" type="checkbox" id="3">
+                            <label class="filter-item__label" for="3">
+                                <div class="filter-item__checkbox"></div>
+                                <p class="filter-item__checkbox-text">Декоративные</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-item__content-wrapper">
+                        <div class="filter-item__checkbox-wrapper">
+                            <input class="filter-item__input" type="checkbox" id="4">
+                            <label class="filter-item__label" for="4">
+                                <div class="filter-item__checkbox"></div>
+                                <p class="filter-item__checkbox-text">Служебные</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-item">
+                    <div class="filter-item__header-wrapper">
+                        <p class="filter-item__inner-header">Основные черты</p>
+                        <svg>
+                            <use xlink:href="img/main-sprite.svg#top-arrow"></use>
+                        </svg>
+                    </div>
+                    <input class="filter-item__search" type="text" placeholder="Быстрый поиск">
+                    <div class="filter-item__content-wrapper">
+                        <div class="filter-item__checkbox-wrapper">
+                            <input class="filter-item__input" type="checkbox" id="5">
+                            <label class="filter-item__label" for="5">
+                                <div class="filter-item__checkbox"></div>
+                                <p class="filter-item__checkbox-text">Отсутствует чувство страха</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-item__content-wrapper">
+                        <div class="filter-item__checkbox-wrapper">
+                            <input class="filter-item__input" type="checkbox" id="6">
+                            <label class="filter-item__label" for="6">
+                                <div class="filter-item__checkbox"></div>
+                                <p class="filter-item__checkbox-text">Мало линяет</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-item__content-wrapper">
+                        <div class="filter-item__checkbox-wrapper">
+                            <input class="filter-item__input" type="checkbox" id="7">
+                            <label class="filter-item__label" for="7">
+                                <div class="filter-item__checkbox"></div>
+                                <p class="filter-item__checkbox-text">Хорошее послушание</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-item__content-wrapper">
+                        <div class="filter-item__checkbox-wrapper">
+                            <input class="filter-item__input" type="checkbox" id="8">
+                            <label class="filter-item__label" for="8">
+                                <div class="filter-item__checkbox"></div>
+                                <p class="filter-item__checkbox-text">Очень преданная</p>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="filter-item__show-all">Показать все</p>
+                </div>
+                <div class="filter-item">
+                    <div class="filter-item__header-wrapper">
+                        <p class="filter-item__inner-header">Размер</p>
+                        <svg>
+                            <use xlink:href="img/main-sprite.svg#top-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="filter-item__content-wrapper filter-item__content-wrapper_bottom">
+                    <p class="filter-item__text">от</p>
+                    <input class="filter-item__input-bottom" type="text" value="11">
+                    <p class="filter-item__text">до</p>
+                    <input class="filter-item__input-bottom" type="text" value="22">
+                </div>
+            </aside>
+            <div class="items-container">
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="single-item__img">
+                        <img src="img/item-img.jpg" alt="">
+                    </div>
+                    <div class="single-item__wrapper">
+                        <p class="single-item__name">Айну</p>
+                        <p class="single-item__price">12 000₽</p>
+                        <button class="single-item__button">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-button-container">
+            <button class="show-more">Показать ещё</button>
+        </div>
+    </main>
+</body>
+
+</html>

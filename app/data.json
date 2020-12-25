@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Айну",
+        "price": 12000,
+        "image": "/1.jpg",
+        "char": ["hunter", "decorate", "service"],
+        "size": 20,
+        "id": 1
+    },
+    {
+        "name": "Афганская борзая",
+        "price": 15000,
+        "image": "/2.jpg",
+        "char": ["friend", "decorate", "health"],
+        "size": 13,
+        "id": 2
+    },
+    {
+        "name": "Барбет",
+        "price": 50000,
+        "image": "/item-img.jpg",
+        "char": ["fearless", "health", "service"],
+        "size": 14,
+        "id": 3
+    },
+    {
+        "name": "Бассет",
+        "price": 10000,
+        "image": "/3.jpg",
+        "char": ["health", "service"],
+        "size": 5,
+        "id": 4
+    },
+    {
+        "name": "Легавой",
+        "price": 39000,
+        "image": "/4.jpg",
+        "char": ["friend", "fearless"],
+        "size": 15,
+        "id": 5
+    },
+    {
+        "name": "Веттерхун",
+        "price": 12000,
+        "image": "/5.jpg",
+        "char": ["friend", "heath", "fearless"],
+        "size": 7,
+        "id": 6
+    },
+    {
+        "name": "Древера",
+        "price": 17000,
+        "image": "/6.jpg",
+        "char": ["health", "fearless"],
+        "size": 6,
+        "id": 7
+    },
+    {
+        "name": "Ирландский терьер",
+        "price": 15000,
+        "image": "/7.jpg",
+        "char": ["hunter", "fearless"],
+        "size": 6,
+        "id": 8
+    },
+    {
+        "name": "Амереканский кокер",
+        "price": 10000,
+        "image": "/8.jpg",
+        "char": ["devoted", "good"],
+        "size": 13,
+        "id": 9
+    },
+    {
+        "name": "Английский Кокер",
+        "price": 8000,
+        "image": "/9.jpg",
+        "char": ["sheds", "good"],
+        "size": 11,
+        "id": 10
+        },
+    {
+        "name": "Дункер",
+        "price": 20000,
+        "image": "/10.jpg",
+        "char": ["fearless", "devoted"],
+        "size": 20,
+        "id": 11
+    },
+    {
+        "name": "Спаниель",
+        "price": 5000,
+        "image": "/11.jpg",
+        "char": ["fearless", "devoted"],
+        "size": 15,
+        "id": 12
+    }
+]   

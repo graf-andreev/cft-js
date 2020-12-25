@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/item-card.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Frontend CFT</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <a class="header-container__logo" href="">
+            <img src="img/main-logo.png" alt="">
+        </a>
+        <div class="header-container__catalog">
+            <div class="header-container__burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p class="header-container__catalog-name">Каталог</p>
+        </div>
+        <div class="header-input-wrapper">
+            <input class="header-input-wrapper__input" type="text" placeholder="Хочу найти">
+            <button class="header-input-wrapper__button">Найти</button>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav_container">
+                <li>
+                    <svg>
+                        <use xlink:href="img/main-sprite.svg#bonuses"></use>
+                    </svg>
+                    <p>Бонусы</p>
+                </li>
+                <li>
+                    <svg>
+                        <use xlink:href="img/main-sprite.svg#orders"></use>
+                    </svg>
+                    <p>Заказы</p>
+                </li>
+                <li>
+                    <svg>
+                        <use xlink:href="img/main-sprite.svg#actions"></use>
+                    </svg>
+                    <p>Акции</p>
+                </li>
+                <li>
+                    <svg>
+                        <use xlink:href="img/main-sprite.svg#cart"></use>
+                    </svg>
+                    <p>Корзина (<span>5</span>)</p>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="top-block">
+            <div class="top-block__breadcrumbs">
+                <p class="top-block__breadcrumbs-item">Каталог товаров /</p>
+                <p class="top-block__breadcrumbs-item"> Собачки /</p>
+                <p class="top-block__breadcrumbs-item"> Айну</p>
+            </div>
+            <h1 class="top-block__header">Айну</h1>
+        </div>
+        <div class="main-content">
+            <div class="item-img-wrapper">
+                <img class="item-img-wrapper__img" src="img/item-img.jpg" alt="">
+            </div>
+            <div class="item-info">
+                <p class="item-info__header">Характеристика Айну</p>
+                <div class="item-info__row">
+                    <p class="item-info__type">Тип</p>
+                    <p class="item-info__value">Охотничьи, Компаньоны</p>
+                </div>
+                <div class="item-info__row">
+                    <p class="item-info__type">Размер</p>
+                    <p class="item-info__value">Средняя (11-25кг)</p>
+                </div>
+                <div class="item-info__row">
+                    <p class="item-info__type">Основные черты</p>
+                    <p class="item-info__value">Очень преданная, Дружелюбная,
+                        Подходит для охоты, Мало лает</p>
+                </div>
+                <div class="item-info__row">
+                    <p class="item-info__type">Частые заболевания</p>
+                    <p class="item-info__value">Глухота, Паралич гортани </p>
+                </div>
+                <div class="item-info__row">
+                    <p class="item-info__type">Интеллект</p>
+                    <p class="item-info__value">45%</p>
+                </div>
+                <div class="payment-block">
+                    <p class="payment-block__header">Стоимость</p>
+                    <p class="payment-block__price">12 000₽</p>
+                    <button class="payment-block__buy">Забрать</button>
+                    <button class="payment-block__to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
