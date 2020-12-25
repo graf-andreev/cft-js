@@ -1,8 +1,8 @@
 let renderContainer = document.querySelector('.main-content');
 let container = document.querySelector('.items-container');
 let newYearStart = document.querySelector('.new-year');
-// import {makeNewYear} from 'new-year.js';
-// newYearStart.addEventListener('click', makeNewYear)
+import {makeNewYear} from './new-year.js';
+newYearStart.addEventListener('click', makeNewYear)
 
 
 window.onload = function () {

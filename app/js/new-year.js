@@ -1,4 +1,4 @@
-export function makeNewYear(){
+const makeNewYear = function(){
 let elems = document.querySelectorAll('*');
 
 function randomColor() {
@@ -19,5 +19,5 @@ setInterval(getRandom, 2000);
 setInterval(clear, 2000);
 }
 
-
+export {makeNewYear};
 
